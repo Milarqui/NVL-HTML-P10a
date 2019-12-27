@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Encuesta de satisfacción</title>
+ </head>
+ <body>
+    <h1>¿Está usted satisfecho?</h1>
+    <p>Por favor, rellene la siguiente encuesta sobre su grado de satisfacción con nuestro producto.</p>
+    <form method="post" action="miservidor.php">
+      <div>
+        <label for="Codigo_postal">Código postal:</label>
+        <input id="Codigo_postal" type="numeric">
+      </div>
+      <div>
+        <label for="Satisfaccion">¿Cuál es su grado de satisfacción con el producto?</label>
+        <select id="Satisfaccion">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div>
+        <label for="Correo_electronico">Correo electrónico:</label>
+        <input id="Correo_electronico" type="text">
+      </div>
+      <div>
+        <label for="Positivo">¿Qué le ha gustado de nuestro producto?</label>
+        <textarea id="Positivo"></textarea>
+      </div>
+      <div>
+        <label for="Negativo">¿Qué le ha disgustado de nuestro producto?</label>
+        <textarea id="Negativo"></textarea>
+      </div>
+      <div>
+        <label for="Atencion">¿Cuál es su opinión sobre nuestra atención al cliente?</label>
+        <select id="Atencion">
+          <option value="1">Pésimo</option>
+          <option value="2">Regular</option>
+          <option value="3">Bueno</option>
+          <option value="4">Excelente</option>
+        </select>
+      </div>
+      <div>
+        <label for="Experiencia">En general, ¿cuál es su opinión sobre nuestra empresa?</label>
+        <input name="Experiencia" type="radio" value="1">Pésima
+        <input name="Experiencia" type="radio" value="2">Regular
+        <input name="Experiencia" type="radio" value="3">Buena
+        <input name="Experiencia" type="radio" value="4">Excelente
+      </div>
+      <div>
+        <label for="Experiencia_op">Indíquenos qué sugerencias tiene para mejorar nuestro servicio:</label>
+        <textarea id="Experiencia_op"></textarea>
+      </div>
+      <input type=”submit” value=”Enviar”>
+    </form>
+  </body>
+</html>
